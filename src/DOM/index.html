@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>TIMES</h1>
+
+    <ul class="listatimes"></ul>
+  </body>
+
+  <script>
+    var times = ["Real madri", "Barcelona", "Maconha Club", "Real madri", "Barcelona", "Maconha Club"];
+
+    var listatimes = document.querySelector("ul.listatimes");
+
+    for (var i = 0; i < times.length; i++) {
+      var time = times[i];
+      var listItem = document.createElement("li");
+      listItem.innerHTML = time;
+      listatimes.appendChild(listItem);
+    }
+  </script>
+</html>
